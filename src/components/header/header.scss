@@ -1,0 +1,215 @@
+.header{
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+.nav 
+{
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+}
+.nav__logo{
+ color:var(--title-color);
+ font-weight: var(--font-medium);
+}
+
+.nav_link{
+    display: flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color:var(--title-color);
+    font-weight: var(--font-medium);
+    transition: 3s;
+}
+.nav__list{
+    display: flex;
+    column-gap: 2rem;
+}
+.nav__icon{
+    display: none;
+}
+.activate-link,.nav_link:hover{
+    color: var(--title-color-dark);
+}
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .nav{
+        right:-5rem;
+        height:var(--header-height);
+}
+} 
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    
+}
+
+  @media screen and (max-width: 576px) {
+  .nav__list{
+    top:initial;
+    bottom: 0;
+    left:-10px;
+    position: fixed;
+    column-gap: 4rem;
+    background-color: white;
+    width: 100%;
+    height: 4rem;
+    align-items: center;
+}
+.nav{
+    height:var(--header-height);
+}
+.nav__menu{
+    position: fixed;
+}
+    .nav__icon{
+        
+        display: block;
+        font-size:3rem;
+        column-gap: 4rem;
+        align-items: center;
+        color: black;
+        align-items: center;
+        justify-content: center;
+        
+}
+        .icon-value{
+        display: none;
+}
+  
+    .uil-port{
+    width: 60px;
+    font-size: 4rem;
+    
+    }
+
+    .uil-estate{
+        display: none;
+        }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 400px) {
+    .nav__list{
+        top:initial;
+        bottom: 0;
+        position: fixed;
+        left: -13px;
+        align-items: center;
+        column-gap:30px;
+        justify-content: center;
+    }
+    .nav{
+        height:var(--header-height);
+    }
+    .nav__menu{
+        position: fixed;
+        column-gap:15px;
+        left: 10px;
+        width: 100%;
+        
+    }
+    .nav__icon{
+            display: block;
+            font-size:3rem;
+            align-items: center;
+            color: aliceblue;
+           
+    }
+            .icon-value{
+            display: none;
+    }
+    .uil-estate{
+        display: none;
+      }
+      .uil-port{
+        font-size: 3rem;
+        }
+        .home__scroll{
+            left: 10px;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        .nav__list{
+            top:initial;
+            bottom: 0;
+            left:-15px;
+            position: fixed;
+            align-items: center;
+            column-gap:35px;
+            justify-content: center;
+        }
+        .nav{
+            height:var(--header-height);
+        }
+        .nav__menu{
+            position: fixed;
+            column-gap:15px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            
+        }
+            .nav__icon{
+                display: block;
+                font-size:2rem;
+                align-items: center;
+                color: black;
+        
+        }
+                .icon-value{
+                display: none;
+        }
+        .uil-estate{
+            display: none;
+            }
+            .uil-port{
+            font-size:3.7rem;
+            padding: 13.5px;
+            }
+            }
+
+            @media screen and (max-width: 395px) {
+            .nav__list{
+                top:initial;
+                bottom: 0;
+                position: fixed;
+                align-items: center;
+                column-gap:26px;
+                justify-content: center;
+            }
+            .nav{
+                height:var(--header-height);
+            }
+            .nav__menu{
+                position: fixed;
+                column-gap:15px;
+                left: 0;
+                width: 100%;
+                
+            }
+                .nav__icon{
+                    
+                    display: block;
+                    font-size:2rem;
+                    align-items: center;
+                    color: rgb(0, 0, 0);
+                
+            }
+                    .icon-value{
+                    display: none;
+            }
+            .uil-estate{
+                display: none;
+              }
+              .uil-port{
+                font-size: 4rem;
+                }
+              }
+      
