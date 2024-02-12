@@ -6,8 +6,11 @@ import About from "./components/about/about.jsx"
 import Skills from "./components/skills/skills.jsx"
 import Services from './components/services/services';
 import Qualification from './components/qualification/qualification';
-import Testomonial from './components/testomonial/testomonial.jsx';
 import Contact from './components/contact/contact';
+import Footer from './components/footer/footer.jsx';
+import Scrollup from './components/scrollup/scrollup.jsx';
+
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,9 +24,10 @@ function App() {
       <Skills />
       <Services />
       <Qualification />
-      <Testomonial />
       <Contact />
+      <Footer/>
       </main>
+      <Scrollup/>
     </>
   )
 }

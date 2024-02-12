@@ -17,7 +17,7 @@ const header = () => {
 
 
                     <li className="nav__item">
-                        <a href="Home" className="nav_link">
+                        <a href="#" className="nav_link">
                         <AiOutlineHome className="nav__icon uil-estate"/><span className='icon-value'>Home</span>
                         </a>
                     </li>

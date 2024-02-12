@@ -1,7 +1,8 @@
 import React from 'react'
 import "./about.scss"
-import AboutImg from "../assets/profile.jpeg"
-import Cv from "../assets/John-Cv.pdf"
+import AboutImg from "../assets/profile.jpg"
+import intro from '../assets/intro.jpg'
+import Cv from "../assets/Arkit.pdf"
 import Info from "./info.jsx"
 import {GrDocumentDownload} from "react-icons/gr"
 
@@ -13,7 +14,7 @@ return (
             <h2 className="section__title">About me</h2>
             <span className="section__subtitle">My Introduction</span>
             <div className="about__container  container grid">
-            <img src={AboutImg} alt="" className="about__img" />
+            <img src={intro} alt="" className="about__img" />
             <div className="about__data">
             <Info/>
             <p className="about__discription">Dive deeper into who I am, my background, and my passions.
